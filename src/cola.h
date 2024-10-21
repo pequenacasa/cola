@@ -38,7 +38,7 @@ typedef struct {
   unsigned int content_count;
 } COLA_Context;
 
-inline COLA_Context *CreateContext(const unsigned int content_count) {
+inline COLA_Context *COLA_CreateContext(const unsigned int content_count) {
   COLA_Context *ctx = (COLA_Context *)malloc(sizeof(COLA_Context));
 
   if (ctx == NULL) {

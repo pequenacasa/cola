@@ -1,7 +1,7 @@
 #include "../src/cola.h"
 
 int main() {
-  COLA_Context *ctx = CreateContext(3);
+  COLA_Context *ctx = COLA_CreateContext(3);
 
   COLA_LoadFileContent(ctx, "a.txt", 0);
   COLA_LoadTextContent(ctx, "--", 1);
